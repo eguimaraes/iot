@@ -2,9 +2,9 @@ int EstadoBotao1 = 0;
 
 void setup() {
 
-  pinSetupIn(5);
+
  
-  for(int x=2;x<=4; x++){   
+  for(int x=2;x<=5; x++){   
     
   pinSetupOut(x);            
     
@@ -14,19 +14,21 @@ void setup() {
 }
 
 void loop() {
-EstadoBotao1 = digitalRead(5);
+
+  
+
 
 
   
-  for(int x=2;x<=4; x++){
+  for(int x=2;x<=5; x++){
     
     
     piscaLed(x,400);
             
-    }
+  
 
 }
-
+}
 
 void piscaLed(int pin, int tempo){
   
